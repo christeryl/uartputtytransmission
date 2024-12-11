@@ -24,9 +24,7 @@
         input sendMessage_button,                // Start transmission signal
         input [7:0] input_data,    // 8-bit parallel input data
         output reg output_data_serial = 1'b1, // Serial output
-        input baud_clk,             // Baud rate clock
-        output [1:0]state_out,
-        output sig_out
+        input baud_clk             // Baud rate clock
     );
         
         // State machine states
@@ -38,26 +36,12 @@
         reg [1:0] state = IDLE;       // Current state
         reg [2:0] bit_index = 0;      // To track the bit being transmitted
         reg [7:0] shift_reg = 0;      // Shift register for parallel-to-serial conversion
-        reg sig = 0;
+        
         reg button_sync1 = 0;
         reg button_sync2 = 0;
-        assign state_out = state;
-        assign sig_out = sig;
+        
         wire sendSignal = button_sync1 && !button_sync2;
-            // Synchronize the button press to baud_clk
-//    always @(posedge baud_clk) begin
-
-//    end
-
-//    // Generate a pulse for `sig` when the button is pressed
-//    always @(posedge baud_clk) begin
-//        if (state == IDLE && button_sync2 && !button_sync1)
-//            sig <= 1; // Trigger transmission
-//    end
-
-//        always @(posedge sendMessage_button)
-//            sig <= 1;
-    
+         
         always @(posedge baud_clk) begin
             case (state)
                 IDLE: begin
@@ -92,7 +76,6 @@
                 STOP: begin
                     output_data_serial <= 1'b1; // Stop bit
                     state <= IDLE; // Return to idle state after stop bit
-//                    sig <= 0;
                 end
            endcase
         end

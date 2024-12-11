@@ -1,0 +1,104 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Dec 11 15:48:50 2024
+| Host         : DESKTOP-8KRRK8E running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UART_top_control_sets_placed.rpt
+| Design       : UART_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   133 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |    14 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            3 |
+| No           | No                    | Yes                    |              24 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              38 |           17 |
+| Yes          | No                    | Yes                    |              14 |            5 |
+| Yes          | Yes                   | No                     |              16 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|            Clock Signal           |                Enable Signal               |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[2]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[5]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[0]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[1]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[4]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[7]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[3]                   |                                  |                1 |              1 |         1.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/shift_reg[6]                   |                                  |                1 |              1 |         1.00 |
+|  clk_115200/baud_clk              | sendData/button_sync1                      |                                  |                1 |              1 |         1.00 |
+|  clk_115200/baud_clk              | sendData/shift_reg[7]_i_2_n_0              | sendData/shift_reg[7]_i_1__0_n_0 |                1 |              1 |         1.00 |
+|  clk_115200/baud_clk              | sendData/output_data_serial_i_1_n_0        |                                  |                1 |              1 |         1.00 |
+|  displayReceivedData/slowclk/CLK  |                                            | btnC_IBUF                        |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG                    |                                            | receiveData/reset                |                2 |              2 |         1.00 |
+| ~clk_IBUF_BUFG                    |                                            |                                  |                1 |              3 |         3.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/FSM_onehot_state[3]_i_1__0_n_0 |                                  |                1 |              4 |         4.00 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/bit_index[3]_i_1_n_0           | receiveData/bit_index0           |                3 |              4 |         1.33 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/sample_count                   |                                  |                1 |              4 |         4.00 |
+|  clk_115200/baud_clk              |                                            |                                  |                2 |              4 |         2.00 |
+|  clk_115200/baud_clk              | sendData/FSM_onehot_state[3]_i_1_n_0       |                                  |                1 |              4 |         4.00 |
+| ~clk_IBUF_BUFG                    | receiveData/sel                            | receiveData/count[3]_i_1__0_n_0  |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                    | receiveData/receive_clk/count_2            | receiveData/reset                |                2 |              6 |         3.00 |
+|  clk_115200/baud_clk              | sendData/shift_reg[7]_i_2_n_0              | sendData/shift_reg[6]_i_1_n_0    |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                    | receiveData/receive_clk/count              | receiveData/reset                |                3 |              8 |         2.67 |
+|  clk_115200/baud_clk              |                                            | btnC_IBUF                        |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                    |                                            | btnU_IBUF                        |                3 |             10 |         3.33 |
+| ~receiveData/receive_clk/CLK_BUFG | receiveData/parallel_out[7]_i_1_n_0        |                                  |                4 |             16 |         4.00 |
++-----------------------------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+
+

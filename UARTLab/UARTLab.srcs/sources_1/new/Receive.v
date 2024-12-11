@@ -23,7 +23,7 @@
 module Receive(
     input RX,
     output reg [7:0] parallel_out = 0,
-    input clk    
+    input clk
     );
     
     // State Machine States
@@ -38,28 +38,44 @@ module Receive(
     reg [3:0] sample_count = 0;     // Counts oversample ticks (0 to 1)
     reg reset = 0;
     reg prev_RX; // Register to store previous RX
+    reg [3:0] count = 0;
+    reg RX_sync1 = 0;
+    reg RX_sync2 = 0;
+//    wire readSignal = RX_sync1 && !RX_sync2;
+    
+    //receiveState output pin assignment
+    assign receive_state_output = state;
+    
     
     Oversample_clk receive_clk(clk, baud_clk_x2, reset);
+//    always@ (posedge reset)
+//        JAtest <= 1;
     
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         prev_RX <= RX; // Store previous state of RX
     end
     
     always @(negedge clk) begin
-        if (state == IDLE && prev_RX == 1 && RX == 0) // Falling edge detected
+        RX_sync1 <= RX;
+        RX_sync2 <= RX_sync1;
+        if (state == IDLE && RX_sync2 == 1 && RX_sync1 == 0) begin// Falling edge detected
             reset <= 1;
+            count <= 0;
+        end
         else
+            if (count < 10)
+                count = count + 1;
+            else begin
             reset <= 0;
+            end
     end
-       
+  
     always @(negedge baud_clk_x2) begin
         case (state)
             IDLE: begin
                 bit_index <= 0;         // Reset bit index
                 sample_count <= 0;      // Reset sample counter
-                if (RX == 1'b0) begin // Start bit detected
-                    state <= BEGIN;
-                end
+                state <= BEGIN;
             end
             
             BEGIN: begin

@@ -3,28 +3,27 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 11 10:04:08 2024
-# Process ID: 9492
-# Current directory: C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22296 C:\Users\Chris\Documents\GitHub\uartputtytransmission\UARTLab\UARTLab.xpr
-# Log file: C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/vivado.log
-# Journal file: C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab\vivado.jou
-# Running On        :DESKTOP-I1LEI3J
+# Start of session at: Wed Dec 11 10:07:20 2024
+# Process ID: 16048
+# Current directory: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8280 C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.xpr
+# Log file: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/vivado.log
+# Journal file: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab\vivado.jou
+# Running On        :DESKTOP-8KRRK8E
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
-# Processor Detail  :AMD Ryzen 9 7940HS w/ Radeon 780M Graphics     
-# CPU Frequency     :3993 MHz
-# CPU Physical cores:8
-# CPU Logical cores :16
-# Host memory       :16326 MB
-# Swap memory       :11811 MB
-# Total Virtual     :28137 MB
-# Available Virtual :15160 MB
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+# CPU Frequency     :2904 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :17023 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19573 MB
+# Available Virtual :13420 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.xpr
+open_project {C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.xpr}
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab' since last save.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
@@ -85,14 +84,257 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.gen/sources_1'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/oversample_clk.v', nor could it be found using path 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/oversample_clk.v'.
+INFO: [Project 1-313] Project file moved from 'C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1547.562 ; gain = 425.781
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 1472.547 ; gain = 390.961
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/oversample_clk.v] -no_script -reset -force -quiet
-remove_files  C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/oversample_clk.v
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed Dec 11 10:08:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/synth_1/UART_top.dcp to C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 11 10:42:41 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/synth_1/runme.log
+[Wed Dec 11 10:42:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/impl_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 08 2024-17:00:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1552.340 ; gain = 2.727
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACB5A9A
+set_property PROGRAM.FILE {C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/impl_1/UART_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.runs/impl_1/UART_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\UART_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\UART_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sim_1\new\Receive_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Receive.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Admin\ECEN340Vivado\UARTLab - Copy\uartputtytransmission\UARTLab\UARTLab.srcs\sources_1\new\Transmit.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Receive_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Receive_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Receive_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/Receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/Transmit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen2
+INFO: [VRFC 10-311] analyzing module Oversample_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Receive_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Receive_tb_behav xil_defaultlib.Receive_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Receive_tb_behav xil_defaultlib.Receive_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Transmit
+Compiling module xil_defaultlib.Oversample_clk
+Compiling module xil_defaultlib.Receive
+Compiling module xil_defaultlib.clk_gen2
+Compiling module xil_defaultlib.Receive_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Receive_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1627.598 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Receive_tb_behav -key {Behavioral:sim_1:Functional:Receive_tb} -tclbatch {Receive_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Receive_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Receive_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1642.184 ; gain = 14.586
+run all
+$finish called at time : 581 us : File "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v" Line 64
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Receive_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Receive_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Receive_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Receive_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Receive_tb_behav xil_defaultlib.Receive_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Receive_tb_behav xil_defaultlib.Receive_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1642.652 ; gain = 0.469
+run all
+$finish called at time : 581 us : File "C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v" Line 64
+relaunch_sim

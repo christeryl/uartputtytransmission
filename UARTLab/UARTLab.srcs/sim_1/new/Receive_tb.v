@@ -32,9 +32,7 @@ module Receive_tb();
     reg sendMessage_button;
     reg [7:0] input_data;
     wire baud_clk;
-    wire sig_out;
-    wire [1:0] state_out;
-    Transmit uut2(sendMessage_button, input_data, RX, baud_clk, state_out[1:0], sig_out);
+    Transmit uut2(sendMessage_button, input_data, RX, baud_clk);
     
     Receive uut3(RX, RX_parallel_out,clk);
     clk_gen2 clk_115200(clk, btnU, baud_clk);
@@ -47,16 +45,16 @@ module Receive_tb();
             sendMessage_button = 0;
             input_data = 11'b01010101;
 
-            #1000 sendMessage_button = 1; // 1microsecond
-            #2000 sendMessage_button = 0;
+            #10000 sendMessage_button = 1; // 1microsecond
+            #20000 sendMessage_button = 0;
             
-            #10000 input_data = 8'b10101010;
-            #11000 sendMessage_button = 1; // 1microsecond
-            #12000 sendMessage_button = 0;
+            #11000 input_data = 8'b10101010;
+            #160000 sendMessage_button = 1; // 1microsecond
+            #170000 sendMessage_button = 0;
                         
             #14000 input_data = 8'b00000000;
-            #15000 sendMessage_button = 1; // 1microsecond
-            #16000 sendMessage_button = 0;
+            #200000 sendMessage_button = 1; // 1microsecond
+            #210000 sendMessage_button = 0;
             
             #500000; // 500 microsecond
             

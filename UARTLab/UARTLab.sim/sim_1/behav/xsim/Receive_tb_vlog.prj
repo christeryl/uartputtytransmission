@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../UARTLab.srcs/sources_1/new/Receive.v" \
 "../../../../UARTLab.srcs/sources_1/new/Transmit.v" \
+"../../../../UARTLab.srcs/sources_1/new/clkgen.v" \
 "../../../../UARTLab.srcs/sim_1/new/Receive_tb.v" \
 
 # compile glbl module

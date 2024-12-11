@@ -69,22 +69,39 @@ endmodule
 
 module Oversample_clk(
     input clk,
-    output reg clk_230400Hz,
+    output reg clk_230400Hz = 1'b1,
     input rst
     );
+    parameter IDLE = 1'b0,
+              READ = 1'b1;
+    reg state = IDLE;
+    reg [5:0]count_2;
     // generate 230400Hz clk signal
-reg [8:0] count; // make sure the count has enough bits to count to 217
-always @ (posedge clk, posedge rst)    // fclk is 100MHz
-if (rst)
-    begin
-        count <= 0;
-        clk_230400Hz <= 0;
-    end
-else if (count < 217)
-    count <= count + 1; // keep incrementing until you hit 217
-else
-    begin
-        count <= 0;
-        clk_230400Hz <= ~clk_230400Hz; // invert the clock every 0.5 second (a cycle is both a toggle on and a toggle off)
-    end
+    reg [8:0] count; // make sure the count has enough bits to count to 217
+    always @ (posedge clk, posedge rst)    // fclk is 100MHz
+    if (rst)
+        begin
+            count <= 0;
+            count_2 <= 0;
+            clk_230400Hz <= 0;
+            state <= READ;
+        end
+    else if (state == READ)
+        begin
+            if (count_2 >= 39)begin
+                state <= IDLE;
+                clk_230400Hz <= 1;
+            end         
+            else if (count < 217)
+                count <= count + 1; // keep incrementing until you hit 217
+            else
+                begin
+                    count <= 0;
+                    count_2 <= count_2 + 1;
+                    clk_230400Hz <= ~clk_230400Hz; // invert the clock every 0.5 second (a cycle is both a toggle on and a toggle off)
+                end
+        end
+    else
+        clk_230400Hz <= 1;
+    
 endmodule

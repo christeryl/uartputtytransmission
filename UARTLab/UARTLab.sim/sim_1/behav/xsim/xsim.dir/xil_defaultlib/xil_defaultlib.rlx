@@ -2,7 +2,8 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/Chris/UARTLab/UARTLab.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
-C:/Users/Chris/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v,1733332477,verilog,,,,Receive_tb,,,,,,,,
-C:/Users/Chris/UARTLab/UARTLab.srcs/sources_1/new/Receive.v,1733332538,verilog,,C:/Users/Chris/UARTLab/UARTLab.srcs/sources_1/new/Transmit.v,,Receive,,,,,,,,
-C:/Users/Chris/UARTLab/UARTLab.srcs/sources_1/new/Transmit.v,1733118026,verilog,,C:/Users/Chris/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v,,Transmit,,,,,,,,
+C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.sim/sim_1/behav/xsim/glbl.v,1733934780,verilog,,,,glbl,,,,,,,,
+C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v,1733941155,verilog,,,,Receive_tb,,,,,,,,
+C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/Receive.v,1733949507,verilog,,C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/Transmit.v,,Receive,,,,,,,,
+C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/Transmit.v,1733955506,verilog,,C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/clkgen.v,,Transmit,,,,,,,,
+C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sources_1/new/clkgen.v,1733943133,verilog,,C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.srcs/sim_1/new/Receive_tb.v,,Oversample_clk;clk_gen2,,,,,,,,

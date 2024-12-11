@@ -28,24 +28,19 @@ module UART_top(
     output dp,
     output [3:0] an,
     input [15:0] sw,
-    output TX, // JA[3] = send, JA[2] = receive, JA[4] = ground, JA[5] = power
-    input RX,
-    output JAtest,
-    output [1:0] state,
-    output sig_out
+    output TX, // JA[4]
+    input RX,  // JA[3]
+    output [7:0] led
     );
-    wire baud_clk,
-         baud_clk_x2,
-         parallel_data_rcv;
-    
-//    assign JA[6] = 1'b1;
-//    assign JA[5] = 1'b0;
+    wire baud_clk;
+    wire [7:0]parallel_data_rcv;
+    assign led = parallel_data_rcv;
     
     clk_gen2 clk_115200(clk, btnU, baud_clk);
-    assign JAtest = btnC;
-    Transmit sendData(btnC, sw[7:0], TX, baud_clk, state, sig_out);
-    Receive receiveData(RX, parallel_data_rcv,clk);
-//    parallel_data = {8'b00000000, parallel_data};
+    
+    Transmit sendData(btnC, sw[7:0], TX, baud_clk);
+    Receive receiveData(RX, parallel_data_rcv, clk);
+
     sseg_x4_top displayReceivedData(parallel_data_rcv, seg, an, dp, btnC, baud_clk);
     
 endmodule
