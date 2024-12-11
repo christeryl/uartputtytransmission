@@ -18,8 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
+ 
+ 
 module sseg_x4_top(
     input [15:0] sw,
     output [6:0] seg,
@@ -31,35 +31,28 @@ module sseg_x4_top(
     );
     wire clk_div;
     clk_gen2 slowclk(clk, btnC,clk_div);
-    
     digit_selector an_sel(clk_div, btnC, an[3:0]);
-    
     wire [3:0] not_used;
     wire [3:0] hex_num;
-    
     hex_num_gen hex_generator (
     .digit_sel(an[3:0]), // Connect the selected digit
     .sw(sw),              // Connect the switches
     .hex_num(hex_num)     // Output hex number to be displayed
     );
-    
     Single7Seg inst1 (
     .seg (seg),
     .an (not_used),
     .dp (dp),
     .sw (hex_num)
     );
-    
 //    assign JA[4:0] = {an[3:0],clk_div};
-    
 endmodule
-
+ 
 module hex_num_gen(
     input [3:0] digit_sel,
     input [15:0] sw,
     output reg [3:0] hex_num
 );
-    
     always @(*) begin
         case (digit_sel)
             4'b1110: hex_num = sw[3:0];     // First 4 switches
@@ -69,6 +62,4 @@ module hex_num_gen(
 //            default: hex_num = 4'b1110;      // Default case (if needed)
         endcase
     end
-    
 endmodule
-
