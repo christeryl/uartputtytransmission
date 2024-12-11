@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/Admin/ECEN340Vivado/UARTLab - Copy/uartputtytransmission/UARTLab/UARTLab.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/Chris/Documents/GitHub/uartputtytransmission/UARTLab/UARTLab.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="25460e648ad84348b9b4db938bd1642b"/>
@@ -133,14 +133,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/UART_top.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/oversample_clk.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
