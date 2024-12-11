@@ -22,35 +22,45 @@
 
 module Receive_tb();
     // variables for receive module
-    wire [7:0] data_in_parallel;
-    wire data_serial_in;    // ouput from transmit and input to receive
-    reg oversample_clk;
-    parameter period1 = 20;
-    parameter period2 = 10;
+    wire [7:0] RX_parallel_out;
+    wire RX;    // ouput from transmit and input to receive
+    parameter period = 10;
+    reg clk = 0;
+    wire btnU = 0;
+    
     //variables for transmit module
     reg sendMessage_button;
     reg [7:0] input_data;
-    reg baud_clk;
-    Transmit uut2(sendMessage_button, input_data, data_serial_in, baud_clk);
-    Receive uut3(oversample_clk, data_serial_in, data_in_parallel);
-    always #(period2/2) oversample_clk = ~oversample_clk;  // writing our clock cycles like this is easier to read
-    always #(period1/2) baud_clk = ~baud_clk;  // writing our clock cycles like this is easier to read
+    wire baud_clk;
+    wire sig_out;
+    wire [1:0] state_out;
+    Transmit uut2(sendMessage_button, input_data, RX, baud_clk, state_out[1:0], sig_out);
+    
+    Receive uut3(RX, RX_parallel_out,clk);
+    clk_gen2 clk_115200(clk, btnU, baud_clk);
+
+
+    always #(period/2) clk = ~clk;
     initial
     begin
-            oversample_clk = 0;
-            baud_clk = 0;
+            clk = 0;
             sendMessage_button = 0;
-            input_data = 8'b01010101;
+            input_data = 11'b01010101;
+
             #1000 sendMessage_button = 1; // 1microsecond
             #2000 sendMessage_button = 0;
+            
             #10000 input_data = 8'b10101010;
             #11000 sendMessage_button = 1; // 1microsecond
             #12000 sendMessage_button = 0;
+                        
             #14000 input_data = 8'b00000000;
             #15000 sendMessage_button = 1; // 1microsecond
             #16000 sendMessage_button = 0;
+            
             #500000; // 500 microsecond
+            
             $finish;
     end
- 
+
 endmodule

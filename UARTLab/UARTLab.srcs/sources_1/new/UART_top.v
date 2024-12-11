@@ -28,19 +28,24 @@ module UART_top(
     output dp,
     output [3:0] an,
     input [15:0] sw,
-    output [6:3] JA //JA[5]: 3.3V, JA[4]: Ground, JA[3]:Send, JA[2]:Recieve
+    output TX, // JA[3] = send, JA[2] = receive, JA[4] = ground, JA[5] = power
+    input RX,
+    output JAtest,
+    output [1:0] state,
+    output sig_out
     );
     wire baud_clk,
          baud_clk_x2,
-         parallel_data;
+         parallel_data_rcv;
     
-   // assign JA[6] = 1'b1;
-   // assign JA[5] = 1'b0;
-    clk_gen2 clk_115200(clk, btnC, baud_clk);
-    Oversample_clk clk_230400(clk, baud_clk_x2, btnC);
-    Transmit sendData(btnC, sw[7:0], JA[3], baud_clk);
-    Receive receiveData(baud_clk_x2, JA[2], parallel_data);
+//    assign JA[6] = 1'b1;
+//    assign JA[5] = 1'b0;
+    
+    clk_gen2 clk_115200(clk, btnU, baud_clk);
+    assign JAtest = btnC;
+    Transmit sendData(btnC, sw[7:0], TX, baud_clk, state, sig_out);
+    Receive receiveData(RX, parallel_data_rcv,clk);
 //    parallel_data = {8'b00000000, parallel_data};
-    sseg_x4_top displayReceivedData(parallel_data, seg, an, dp, btnC, baud_clk);
+    sseg_x4_top displayReceivedData(parallel_data_rcv, seg, an, dp, btnC, baud_clk);
     
 endmodule

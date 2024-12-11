@@ -24,19 +24,21 @@ module Transmit_tb();
     reg sendMessage_button;
     reg [7:0] input_data;
     wire output_data_serial;
-    reg baud_clk;
+    reg clk;
     parameter period = 10;
+    reg btnU = 0;
     
+    clk_gen2 uut5(clk, btnU, baud_clk);
     Transmit uut(sendMessage_button, input_data, output_data_serial, baud_clk);
-    always #(period/2) baud_clk = ~baud_clk;  // writing our clock cycles like this is easier to read
+    always #(period/2) clk = ~clk;  // writing our clock cycles like this is easier to read
     initial
     begin
-            baud_clk = 0;
+            clk = 0;
             sendMessage_button = 0;
             input_data = 8'b01010101;
             
             #1000 sendMessage_button = 1; // 1microsecond
-            #2000 sendMessage_button = 0;
+            #200000 sendMessage_button = 0;
             
             #500000; // 500 microsecond
             
