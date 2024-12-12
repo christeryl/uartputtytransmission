@@ -2,3 +2,6 @@ Running: xsim.dir/Receive_tb_behav/xsimk.exe -simmode gui -wdb Receive_tb_behav.
 Design successfully loaded
 Design Loading Memory Usage: 7696 KB (Peak: 7696 KB)
 Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 16352 KB (Peak: 16352 KB)
+Simulation CPU Usage: 468 ms
